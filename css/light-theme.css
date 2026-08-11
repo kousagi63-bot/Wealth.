@@ -205,19 +205,22 @@ body.premium-theme.page-home .hero-premium--split-light.hero-bg .hero-wealth-her
 }
 
 body.premium-theme .hero-premium--split-light.hero-bg .hero-split__copy .hero-premium__kicker {
-  background: rgba(201, 166, 73, 0.16);
-  border-color: rgba(201, 166, 73, 0.38);
-  color: #E3C77B;
+  background: rgba(201, 166, 73, 0.16) !important;
+  border-color: rgba(201, 166, 73, 0.38) !important;
+  color: #E3C77B !important;
+  -webkit-text-fill-color: #E3C77B !important;
 }
 
 body.premium-theme .hero-premium--split-light.hero-bg .btn--outline-dark {
-  border-color: rgba(255, 255, 255, 0.5);
-  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  color: #FFFFFF !important;
+  background: transparent !important;
 }
 
 body.premium-theme .hero-premium--split-light.hero-bg .btn--outline-dark:hover {
-  border-color: #C9A649;
-  color: #E3C77B;
+  border-color: #C9A649 !important;
+  color: #E3C77B !important;
+  background: transparent !important;
 }
 
 body.premium-theme .hero-premium--split-light.hero-bg .hero-split__copy .hero-wealth-stats .hero-wealth-stats__label {
