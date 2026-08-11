@@ -3228,11 +3228,42 @@ span.testimonial-avatar {
   justify-content: center;
   width: 44px;
   height: 44px;
+  padding: 0;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-sm);
   background: var(--color-surface);
   color: var(--color-ink);
   cursor: pointer;
+}
+
+.dash-sidebar-toggle__bars {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 18px;
+  flex-shrink: 0;
+}
+
+.dash-sidebar-toggle__bars span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.dash-sidebar-toggle[aria-expanded="true"] .dash-sidebar-toggle__bars span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.dash-sidebar-toggle[aria-expanded="true"] .dash-sidebar-toggle__bars span:nth-child(2) {
+  opacity: 0;
+}
+
+.dash-sidebar-toggle[aria-expanded="true"] .dash-sidebar-toggle__bars span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .dashboard-backdrop {
