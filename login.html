@@ -19,29 +19,6 @@
 <body class="page-inner page-auth page-hero-overlay premium-theme theme-light">
 
   <main class="site-main">
-    <section class="page-hero page-hero--image page-hero--center page-hero--hud page-hero--care" aria-labelledby="login-hero-title">
-      <span class="hud-corner hud-corner--tl" aria-hidden="true"></span>
-      <span class="hud-corner hud-corner--tr" aria-hidden="true"></span>
-      <span class="hud-corner hud-corner--bl" aria-hidden="true"></span>
-      <span class="hud-corner hud-corner--br" aria-hidden="true"></span>
-      <div class="page-hero__bg" aria-hidden="true">
-        <img src="images/care-tracking.webp" alt="" width="1920" height="900" decoding="async">
-        <div class="page-hero__overlay"></div>
-        <div class="page-hero__glow page-hero__glow--jade"></div>
-        <div class="page-hero__glow page-hero__glow--lavender"></div>
-      </div>
-      <div class="container page-hero__inner">
-        <p class="section__kicker" data-aos="fade-up">Stackly Wealth portal</p>
-        <h1 id="login-hero-title" data-aos="fade-up" data-aos-delay="100"><span class="hero-text-accent">Sign in</span></h1>
-        <p class="section__lead" data-aos="fade-up" data-aos-delay="150">Choose your role, then enter credentials to access your care dashboard or clinical operations console.</p>
-        <div class="page-hero-stats page-hero-stats--center" data-aos="fade-up" data-aos-delay="200">
-          <span><strong>HIPAA-ready</strong> access</span>
-          <span><strong>Admin</strong> &amp; patient</span>
-          <span><strong>24/7</strong> portal</span>
-        </div>
-      </div>
-    </section>
-
     <section class="section section--dark auth-section">
       <div class="login-form__container">
         <form id="login-form" class="form form--wide auth-form card-surface login-form glass-card" action="#" method="post" novalidate autocomplete="off" data-aos="fade-up">
@@ -54,7 +31,7 @@
           <div class="register-form__role-wrap">
             <fieldset class="role-fieldset register-form__role-fieldset">
               <legend class="register-form__role-legend">Account type</legend>
-              <p class="register-form__role-hint">Select how you're signing in so we open the right Hospital Management workspace.</p>
+              <p class="register-form__role-hint">Select how you're signing in so we open the right Wealth Management workspace.</p>
               <div class="register-form__role-grid" role="radiogroup" aria-label="Select account type">
                 <label class="register-role-card">
                   <input class="register-role-card__input" type="radio" name="role" value="admin">
@@ -94,7 +71,14 @@
             <input id="login-password" name="password" type="password" required minlength="8" placeholder="At least 8 characters" autocomplete="current-password">
             <span class="field-error">Use at least 8 characters.</span>
           </div>
-          <p class="auth-form__forgot-link"><a href="404.html">Forgot password…</a></p>
+          <div class="auth-form__options">
+            <label class="form-check">
+              <input class="form-check__input" type="checkbox" name="remember" value="1">
+              <span class="form-check__box" aria-hidden="true"></span>
+              <span class="form-check__label">Remember Device</span>
+            </label>
+            <p class="auth-form__forgot-link"><a href="404.html">Forgot password…</a></p>
+          </div>
 
           <button type="submit" class="btn btn--primary btn--block">Sign in</button>
           <p id="login-success" class="form-success form-success--center is-hidden" role="status" aria-live="polite">Login successful. Redirecting to your dashboard in 3 seconds…</p>
