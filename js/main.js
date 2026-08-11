@@ -76,7 +76,7 @@
           progressWrap.setAttribute("aria-valuenow", "100");
         }
         if (tagline && tagline.getAttribute("data-boot-messages")) {
-          tagline.textContent = "Care platform ready";
+          tagline.textContent = "Wealth platform ready";
         }
 
         setTimeout(function () {
