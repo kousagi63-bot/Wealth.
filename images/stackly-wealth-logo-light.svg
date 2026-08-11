@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 46" role="img" aria-label="Stackly Wealth">
+  <defs>
+    <linearGradient id="goldGradL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EED9A0"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#C9A649"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="3" width="40" height="40" rx="9" fill="none" stroke="rgba(238,217,160,0.55)" stroke-width="1.2"/>
+  <rect x="5" y="6" width="34" height="34" rx="7" fill="rgba(238,217,160,0.08)"/>
+  <polyline points="11,30 18,30 22,20 27,24 33,14" fill="none" stroke="url(#goldGradL)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="33" cy="14" r="2.2" fill="#EED9A0"/>
+  <text x="52" y="25" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="24" font-weight="600" fill="#F7F1E2" letter-spacing="-0.3">Stackly</text>
+  <text x="53" y="38" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-size="9.5" font-weight="600" fill="#D4AF37" letter-spacing="3.4">W E A L T H</text>
+</svg>

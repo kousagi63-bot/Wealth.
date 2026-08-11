@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F4F7FB">
+  <title>Client Portal — Stackly Wealth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/premium.css">
+  <link rel="stylesheet" href="css/wealth.css">
+  <link rel="stylesheet" href="css/light-theme.css">
+</head>
+<body class="dashboard-page dashboard-page--client premium-theme theme-light">
+
+  <div class="dashboard-backdrop" data-dash-backdrop aria-hidden="true"></div>
+
+  <div class="dashboard-shell">
+    <aside class="dashboard-sidebar-pro" data-dash-sidebar id="dash-sidebar" aria-label="Client sidebar">
+      <div class="dashboard-sidebar-pro__logo">
+        <a href="index.html"><img class="dashboard-sidebar-pro__logo-img" src="images/logo.webp" alt="Stackly Wealth" width="180" height="40"></a>
+      </div>
+      <div class="dashboard-sidebar-pro__profile">
+        <div class="dashboard-sidebar-pro__avatar" data-dash-avatar aria-hidden="true">CL</div>
+        <div>
+          <strong class="dashboard-sidebar-pro__profile-name" data-dash-user-name>Client</strong>
+          <span class="dashboard-sidebar-pro__profile-email" data-dash-user-email>client@stacklywealth.com</span>
+        </div>
+      </div>
+      <p class="dashboard-sidebar-pro__console-label">Wealth client portal</p>
+      <ul class="dashboard-nav-pro">
+        <li><a href="#dash-overview" class="dashboard-sidebar-pro__link is-active" data-dash-nav>Overview</a></li>
+        <li><a href="#dash-portfolio" class="dashboard-sidebar-pro__link" data-dash-nav>My Portfolio</a></li>
+        <li><a href="#dash-goals" class="dashboard-sidebar-pro__link" data-dash-nav>Goals</a></li>
+        <li><a href="#dash-documents" class="dashboard-sidebar-pro__link" data-dash-nav>Documents</a></li>
+        <li><a href="#dash-messages" class="dashboard-sidebar-pro__link" data-dash-nav>Messages</a></li>
+        <li><a href="#dash-services" class="dashboard-sidebar-pro__link" data-dash-nav>Advisory Services</a></li>
+        <li><a href="login.html" data-dash-signout>Logout</a></li>
+      </ul>
+    </aside>
+
+    <div class="dashboard-main-pro" data-dash-main>
+      <button type="button" class="dash-sidebar-toggle" data-dash-sidebar-toggle aria-expanded="false" aria-controls="dash-sidebar">☰ Menu</button>
+
+      <section id="dash-overview" class="dash-section" data-dash-section aria-labelledby="dash-overview-title">
+        <div class="dashboard-top">
+          <div>
+            <h1 id="dash-overview-title" data-dash-greeting>Welcome, Client.</h1>
+            <p class="dashboard-top__sub">Your portfolio, goals, and advisory updates at a glance — Stackly Wealth</p>
+          </div>
+          <a class="btn btn--primary" href="404.html">Book advisor</a>
+        </div>
+
+        <div class="dash-stat-grid">
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Portfolio value</span>
+            <span class="dash-stat-card__value">$1.24M</span>
+            <span class="dash-stat-card__hint">Across 4 accounts</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">YTD return</span>
+            <span class="dash-stat-card__value">+9.4%</span>
+            <span class="dash-stat-card__hint">vs. +8.2% benchmark</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Next meeting</span>
+            <span class="dash-stat-card__value">Thu</span>
+            <span class="dash-stat-card__hint">10:30am with Elena Ruiz</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Unread messages</span>
+            <span class="dash-stat-card__value">3</span>
+            <span class="dash-stat-card__hint">From your advisory team</span>
+          </div>
+        </div>
+
+        <div class="dash-quick-grid">
+          <div class="dash-quick-card">
+            <strong>Your advisor</strong>
+            <p>Elena Ruiz, CFP&reg; — your quarterly portfolio review is scheduled for next week</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Portfolio news</strong>
+            <p>Model allocation reviewed — Growth &amp; Income strategy remains on track with your risk profile</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Rebalance update</strong>
+            <p>Automatic rebalancing completed — $18,400 in tax-loss harvesting realized this quarter</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-portfolio" class="dash-section" data-dash-section aria-labelledby="dash-portfolio-title">
+        <header class="dash-section__head">
+          <h2 id="dash-portfolio-title">My portfolio</h2>
+          <p>Your holdings, asset allocation, and performance across Stackly Wealth accounts.</p>
+        </header>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Holdings</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Account</th><th>Asset class</th><th>Strategy</th><th>Value</th><th>Allocation</th><th>1-yr return</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Taxable</td><td>Equities</td><td>Growth &amp; Income</td><td>$684,000</td><td>55%</td><td>+12.1%</td><td><span class="status-badge status-badge--confirmed">On track</span></td></tr>
+                <tr><td>IRA</td><td>Fixed income</td><td>Income Focus</td><td>$312,000</td><td>25%</td><td>+4.8%</td><td><span class="status-badge status-badge--confirmed">On track</span></td></tr>
+                <tr><td>Roth IRA</td><td>Equities</td><td>Aggressive Growth</td><td>$118,000</td><td>10%</td><td>+15.6%</td><td><span class="status-badge status-badge--confirmed">On track</span></td></tr>
+                <tr><td>Trust</td><td>Alternatives</td><td>Diversified</td><td>$126,000</td><td>10%</td><td>+6.2%</td><td><span class="status-badge status-badge--pending">Review</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Performance</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Period</th><th>Portfolio</th><th>Benchmark</th><th>Net of fees</th></tr></thead>
+              <tbody>
+                <tr><td>1 month</td><td>+1.8%</td><td>+1.5%</td><td>+1.6%</td></tr>
+                <tr><td>3 months</td><td>+3.6%</td><td>+3.2%</td><td>+3.3%</td></tr>
+                <tr><td>1 year</td><td>+11.4%</td><td>+10.2%</td><td>+10.6%</td></tr>
+                <tr><td>Since inception</td><td>+62.8%</td><td>+54.1%</td><td>+57.3%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-goals" class="dash-section" data-dash-section aria-labelledby="dash-goals-title">
+        <header class="dash-section__head">
+          <h2 id="dash-goals-title">Goals</h2>
+          <p>Progress toward the milestones in your plan of record, updated with your advisor.</p>
+        </header>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Goal tracker</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Goal</th><th>Target date</th><th>Target amount</th><th>Funded</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Retirement income</td><td>2045</td><td>$4,800,000</td><td>$2,360,000</td><td><span class="status-badge status-badge--confirmed">On track</span></td></tr>
+                <tr><td>College education</td><td>2032</td><td>$240,000</td><td>$158,000</td><td><span class="status-badge status-badge--confirmed">On track</span></td></tr>
+                <tr><td>Second home</td><td>2030</td><td>$850,000</td><td>$420,000</td><td><span class="status-badge status-badge--pending">Catch-up</span></td></tr>
+                <tr><td>Legacy giving</td><td>Ongoing</td><td>$500,000</td><td>$210,000</td><td><span class="status-badge status-badge--confirmed">On track</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-documents" class="dash-section" data-dash-section aria-labelledby="dash-documents-title">
+        <header class="dash-section__head">
+          <h2 id="dash-documents-title">Documents</h2>
+          <p>Secure access to your plan of record, statements, tax documents, and estate papers.</p>
+        </header>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Recent documents</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Date</th><th>Type</th><th>Provider</th><th>Document</th></tr></thead>
+              <tbody>
+                <tr><td>Jun 30, 2026</td><td>Statement</td><td>Stackly Wealth</td><td>Q2 2026 portfolio statement</td></tr>
+                <tr><td>Jun 12, 2026</td><td>Plan of record</td><td>Elena Ruiz</td><td>2026 financial plan — updated</td></tr>
+                <tr><td>May 28, 2026</td><td>Tax</td><td>Stackly Wealth</td><td>Tax-loss harvesting summary</td></tr>
+                <tr><td>May 14, 2026</td><td>Estate</td><td>Legacy Counsel</td><td>Trust &amp; will review notes</td></tr>
+                <tr><td>Apr 22, 2026</td><td>Statement</td><td>Stackly Wealth</td><td>Q1 2026 portfolio statement</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-messages" class="dash-section" data-dash-section aria-labelledby="dash-messages-title">
+        <header class="dash-section__head">
+          <h2 id="dash-messages-title">Messages</h2>
+          <p>Secure messaging with your advisory team — responses typically within 2–4 hours.</p>
+        </header>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Inbox</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>From</th><th>Subject</th><th>Date</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Elena Ruiz</td><td>Quarterly review scheduling</td><td>Jun 27</td><td><span class="status-badge status-badge--pending">Unread</span></td></tr>
+                <tr><td>Priya Sharma</td><td>Tax-loss harvesting summary</td><td>Jun 25</td><td><span class="status-badge status-badge--pending">Unread</span></td></tr>
+                <tr><td>Stackly Wealth</td><td>New document available</td><td>Jun 24</td><td><span class="status-badge status-badge--pending">Unread</span></td></tr>
+                <tr><td>Michael Chen</td><td>Estate plan next steps</td><td>Jun 12</td><td><span class="status-badge status-badge--confirmed">Read</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-services" class="dash-section" data-dash-section aria-labelledby="dash-services-title">
+        <header class="dash-section__head">
+          <h2 id="dash-services-title">Advisory services</h2>
+          <p>Services available to your relationship — explore what your advisory team can support next.</p>
+        </header>
+
+        <div class="dash-favorites-grid">
+          <article class="dash-favorite-card">
+            <h3>Investment management</h3>
+            <p>Globally diversified portfolios with quarterly advisor reviews — AUM-based fee</p>
+            <span class="dash-favorite-card__tag">Most used</span>
+          </article>
+          <article class="dash-favorite-card">
+            <h3>Financial planning</h3>
+            <p>A living plan of record covering cash flow, goals, and scenario modeling</p>
+            <span class="dash-favorite-card__tag">Plan of record</span>
+          </article>
+          <article class="dash-favorite-card">
+            <h3>Retirement planning</h3>
+            <p>Income modeling and tax-efficient withdrawal strategies for lasting income</p>
+            <span class="dash-favorite-card__tag">Income</span>
+          </article>
+          <article class="dash-favorite-card">
+            <h3>Estate &amp; legacy</h3>
+            <p>Coordinated estate documents, trusts, and charitable giving for the next generation</p>
+            <span class="dash-favorite-card__tag">Legacy</span>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F4F7FB">
+  <title>Admin Dashboard — Stackly Wealth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/premium.css">
+  <link rel="stylesheet" href="css/wealth.css">
+  <link rel="stylesheet" href="css/light-theme.css">
+</head>
+<body class="dashboard-page dashboard-page--admin premium-theme theme-light">
+
+  <div class="dashboard-backdrop" data-dash-backdrop aria-hidden="true"></div>
+
+  <div class="dashboard-shell">
+    <aside class="dashboard-sidebar-pro" data-dash-sidebar id="dash-sidebar" aria-label="Admin sidebar">
+      <div class="dashboard-sidebar-pro__logo">
+        <a href="index.html"><img class="dashboard-sidebar-pro__logo-img" src="images/logo.webp" alt="Stackly Wealth" width="180" height="40"></a>
+      </div>
+      <div class="dashboard-sidebar-pro__profile">
+        <div class="dashboard-sidebar-pro__avatar" data-dash-avatar>AD</div>
+        <div>
+          <strong class="dashboard-sidebar-pro__profile-name" data-dash-user-name>Admin</strong>
+          <span class="dashboard-sidebar-pro__profile-email" data-dash-user-email>admin@stacklywealth.com</span>
+        </div>
+      </div>
+      <p class="dashboard-sidebar-pro__console-label" data-dash-org-label>Wealth management console</p>
+      <ul class="dashboard-nav-pro">
+        <li><a href="#dash-overview" class="dashboard-sidebar-pro__link is-active" data-dash-nav>Overview</a></li>
+        <li><a href="#dash-portfolios" class="dashboard-sidebar-pro__link" data-dash-nav>Portfolios</a></li>
+        <li><a href="#dash-clients" class="dashboard-sidebar-pro__link" data-dash-nav>Clients</a></li>
+        <li><a href="#dash-analytics" class="dashboard-sidebar-pro__link" data-dash-nav>Analytics</a></li>
+        <li><a href="#dash-billing" class="dashboard-sidebar-pro__link" data-dash-nav>Fees &amp; Billing</a></li>
+        <li><a href="login.html" data-dash-signout>Logout</a></li>
+      </ul>
+    </aside>
+
+    <div class="dashboard-main-pro" data-dash-main>
+      <button type="button" class="dash-sidebar-toggle" data-dash-sidebar-toggle aria-expanded="false" aria-controls="dash-sidebar">☰ Menu</button>
+
+      <section id="dash-overview" class="dash-section" data-dash-section aria-labelledby="dash-overview-title">
+        <div class="dashboard-top">
+          <div>
+            <h1 id="dash-overview-title">Wealth operations dashboard</h1>
+            <p class="dashboard-top__sub" data-dash-greeting>Welcome back. Today's advisory activity at a glance — Stackly Wealth.</p>
+          </div>
+        </div>
+
+        <div class="admin-stat-grid">
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Assets under management</span>
+            <span class="dash-stat-card__value">$2.4B</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Client retention</span>
+            <span class="dash-stat-card__value">98%</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">AUM growth (MTD)</span>
+            <span class="dash-stat-card__value">+3.1%</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">New clients</span>
+            <span class="dash-stat-card__value">12</span>
+          </div>
+        </div>
+
+        <div class="dashboard-panel dash-chart-panel">
+          <div class="dashboard-panel__head">Weekly AUM flows</div>
+          <div class="dashboard-panel__body dash-chart-panel__body">
+            <canvas id="admin-chart-revenue" aria-label="Weekly AUM flows chart"></canvas>
+          </div>
+        </div>
+
+        <div class="dash-quick-grid">
+          <div class="dash-quick-card">
+            <strong>Today's activity</strong>
+            <p>$22.1M advisor-led inflows · 4 rebalances executed · 2 estate reviews scheduled</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Advisors on platform</strong>
+            <p>180 advisors · 38 CFP&reg; · 6 senior portfolio strategists on duty across all regions</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>System health</strong>
+            <p>All modules online · rebalancing engine 99.9% · avg. portfolio refresh 8 min</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-portfolios" class="dash-section" data-dash-section aria-labelledby="dash-portfolios-title">
+        <header class="dash-section__head">
+          <h2 id="dash-portfolios-title">Portfolios</h2>
+          <p>Manage client portfolios, model allocations, and pending advisory actions across the Stackly Wealth book.</p>
+        </header>
+
+        <div class="dash-stat-grid dash-stat-grid--compact">
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Under management</span>
+            <span class="dash-stat-card__value">$2.4B</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Rebalances scheduled</span>
+            <span class="dash-stat-card__value">8</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Pending approvals</span>
+            <span class="dash-stat-card__value">5</span>
+          </div>
+        </div>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Client portfolios</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Account</th><th>Client</th><th>Strategy</th><th>AUM</th><th>Risk</th><th>Status</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr><td>#SW-10482</td><td>Maria Santos</td><td>Growth &amp; Income</td><td>$2,450,000</td><td>Moderate</td><td><span class="status-badge status-badge--confirmed">Rebalanced</span></td><td><a href="#">View</a></td></tr>
+                <tr><td>#SW-10391</td><td>James Hartley</td><td>Conservative</td><td>$1,180,000</td><td>Low</td><td><span class="status-badge status-badge--pending">Review</span></td><td><a href="#">View</a></td></tr>
+                <tr><td>#SW-10274</td><td>Lisa Nguyen</td><td>Aggressive Growth</td><td>$860,000</td><td>Aggressive</td><td><span class="status-badge status-badge--confirmed">On track</span></td><td><a href="#">View</a></td></tr>
+                <tr><td>#SW-10158</td><td>Carlos Mendez</td><td>Balanced</td><td>$1,540,000</td><td>Moderate</td><td><span class="status-badge status-badge--alert">Awaiting</span></td><td><a href="#">View</a></td></tr>
+                <tr><td>#SW-10042</td><td>Rachel Kim</td><td>Growth &amp; Income</td><td>$720,000</td><td>Moderate</td><td><span class="status-badge status-badge--confirmed">Rebalanced</span></td><td><a href="#">View</a></td></tr>
+                <tr><td>#SW-09987</td><td>Tom Bradley</td><td>Income Focus</td><td>$980,000</td><td>Conservative</td><td><span class="status-badge status-badge--confirmed">On track</span></td><td><a href="#">View</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-clients" class="dash-section" data-dash-section aria-labelledby="dash-clients-title">
+        <header class="dash-section__head">
+          <h2 id="dash-clients-title">Clients</h2>
+          <p>Active client roster, relationships, and net new assets across the Stackly Wealth network.</p>
+        </header>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Active clients</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Client</th><th>Relationship</th><th>Advisor</th><th>AUM</th><th>Since</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Maria Santos</td><td>Family office</td><td>Elena Ruiz</td><td>$2.45M</td><td>Mar 2018</td><td><span class="status-badge status-badge--confirmed">Active</span></td></tr>
+                <tr><td>James Hartley</td><td>Business owner</td><td>Michael Chen</td><td>$1.18M</td><td>Jun 2020</td><td><span class="status-badge status-badge--confirmed">Active</span></td></tr>
+                <tr><td>Lisa Nguyen</td><td>Executive</td><td>Priya Sharma</td><td>$860K</td><td>Jan 2021</td><td><span class="status-badge status-badge--confirmed">Active</span></td></tr>
+                <tr><td>Carlos Mendez</td><td>Entrepreneur</td><td>Aisha Patel</td><td>$1.54M</td><td>Sep 2019</td><td><span class="status-badge status-badge--pending">Review</span></td></tr>
+                <tr><td>Rachel Kim</td><td>Physician</td><td>Elena Ruiz</td><td>$720K</td><td>Apr 2022</td><td><span class="status-badge status-badge--confirmed">Active</span></td></tr>
+                <tr><td>Tom Bradley</td><td>Retired</td><td>Priya Sharma</td><td>$980K</td><td>Nov 2017</td><td><span class="status-badge status-badge--confirmed">Active</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dash-quick-grid">
+          <div class="dash-quick-card">
+            <strong>New clients this quarter</strong>
+            <p>34 families onboarded · 92% completed digital account opening</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Meetings completed</strong>
+            <p>412 advisory meetings held · 98% plan-of-record updates delivered on time</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Net new assets</strong>
+            <p>$74M net inflows · retirement rollovers at 82% of new funding</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-analytics" class="dash-section" data-dash-section aria-labelledby="dash-analytics-title">
+        <header class="dash-section__head">
+          <h2 id="dash-analytics-title">Analytics</h2>
+          <p>Portfolio allocation coverage, risk models, and client outcomes for the Stackly Wealth book.</p>
+        </header>
+
+        <div class="dash-stat-grid dash-stat-grid--compact">
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Digital adoption</span>
+            <span class="dash-stat-card__value">92%</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Avg. rebalance cycle</span>
+            <span class="dash-stat-card__value">6 days</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Model drift</span>
+            <span class="dash-stat-card__value">0.8%</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Fee transparency</span>
+            <span class="dash-stat-card__value">100%</span>
+          </div>
+        </div>
+
+        <div class="dash-quick-grid">
+          <div class="dash-quick-card">
+            <strong>Top strategies</strong>
+            <p>Growth &amp; Income 34% · Balanced 26% · Conservative 18% · Aggressive 14%</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Net flows trend</strong>
+            <p>Advisor-led inflows up 14% QoQ · equity and fixed income models highest demand</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Outcome highlights</strong>
+            <p>Avg. portfolio performance above benchmark by 0.6% · tax-loss harvesting saved $3.2M</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-billing" class="dash-section" data-dash-section aria-labelledby="dash-billing-title">
+        <header class="dash-section__head">
+          <h2 id="dash-billing-title">Fees &amp; Billing</h2>
+          <p>Management fee invoices, client billing, and collections for advisory services.</p>
+        </header>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Recent invoices</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Invoice</th><th>Client</th><th>Service</th><th>Amount</th><th>Date</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>#INV-2841</td><td>Maria Santos</td><td>Q2 management fee</td><td>$12,250</td><td>Jun 28</td><td><span class="status-badge status-badge--pending">Pending</span></td></tr>
+                <tr><td>#INV-2840</td><td>James Hartley</td><td>Advisory planning</td><td>$5,900</td><td>Jun 27</td><td><span class="status-badge status-badge--confirmed">Paid</span></td></tr>
+                <tr><td>#INV-2839</td><td>Lisa Nguyen</td><td>Estate review</td><td>$3,400</td><td>Jun 26</td><td><span class="status-badge status-badge--confirmed">Paid</span></td></tr>
+                <tr><td>#INV-2838</td><td>Carlos Mendez</td><td>Q2 management fee</td><td>$7,700</td><td>Jun 25</td><td><span class="status-badge status-badge--confirmed">Paid</span></td></tr>
+                <tr><td>#INV-2837</td><td>Rachel Kim</td><td>Retirement planning</td><td>$2,100</td><td>Jun 24</td><td><span class="status-badge status-badge--pending">Processing</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dash-quick-grid">
+          <div class="dash-quick-card">
+            <strong>Collection rate</strong>
+            <p>94% of invoices collected within 30 days — avg. settlement 12 days</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Fee schedule</strong>
+            <p>AUM-based 0.75% standard · planning flat fees 38% · blended arrangements 22%</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Outstanding AR</strong>
+            <p>$84K pending · 18 invoices in review with client accounts</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
