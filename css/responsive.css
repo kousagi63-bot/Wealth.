@@ -997,6 +997,21 @@
     border-radius: var(--radius-lg);
   }
 
+  body.premium-theme.page-auth .auth-form__options {
+    flex-wrap: wrap;
+    row-gap: 0.4rem;
+  }
+
+  body.premium-theme.page-auth .auth-form__options .form-check,
+  body.premium-theme.page-auth .auth-form__options .auth-form__forgot-link {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  body.premium-theme.page-auth .auth-form__options .auth-form__forgot-link {
+    font-size: 0.8rem;
+  }
+
   body.premium-theme .testimonial-ornament {
     font-size: 2.5rem;
   }
